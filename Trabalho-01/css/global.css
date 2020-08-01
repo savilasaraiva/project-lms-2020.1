@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  font-size: 1.6rem;
+  color: white;
+  background-color: #361D4A;
+}
+header, footer {
+  background-color: #0b0018ff;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+header img {
+  width: 150px;
+  margin-left: 20px;
+  padding: 15px 0;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+  padding: 1.8rem;
+}
+header nav ul li a {
+  font: 700 1.4rem "Open Sans", Fallback, sans-serif;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.4rem;
+  transition: all 100ms linear 0s;
+}
+header nav ul li a:hover {
+  color: #feb165ff;
+}
+.btn{
+  line-height: 38px;
+  border-radius: 5px;
+  color: #feb165ff;
+  font-size: 14px;
+  background: white;
+  padding: 0px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 150ms linear 0s;  
+}
+.btn:hover{
+  opacity: 0.9;
+}
+h2 {
+  color: #feb165ff;
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+}
+h3 {
+  color: white;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+}
+.button {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  background-color: #F2AF5C;
+  margin: 15px 0px 0px;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 150ms linear 0s;
+}
+.button:hover {
+  opacity: 0.9;
+}
+main{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+footer{
+  display: flex;
+  font: 600 1.8rem "Open Sans", Fallback, sans-serif;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+section.music {
+  margin: 20px;
+}
+section.music .container {
+  width: 90%;
+  max-width: 980px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #0f0020ff;
+}
+section.music p {
+  color: rgb(154, 142, 191);
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  margin: 10px 0px 0px;
+}
+section.music img {
+  width: 520px;
+  padding: 15px;
+}
+
+/*=============== 
+FORM
+==================*/
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  font: 14px "Open Sans", sans-serif;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 100%;
+}
+.form{
+  margin: 20px;
+}
+.group-btn{
+  display: flex;
+  justify-content: space-around;
+}
+.md{
+  flex: 1 1 auto;
+	width: 60px;
+}
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  background-color: #F2AF5C;
+  margin: 14px 0px 0px;
+  padding: 4px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: all 150ms linear 0s;
+}
+.btn:hover{
+  opacity: 0.9;
+}
