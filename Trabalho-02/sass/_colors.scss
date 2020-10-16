@@ -1,0 +1,29 @@
+$marrom-escuro: #591711;
+$marrom-claro: #91503eff;
+$branco: #FFFFFF;
+$branco-2:  #e3d6ceff;
+
+$marrom-1: #591212;
+$marrom-2: #D96D55;
+$bege: #F2E0D5;
+$mostarda-1: #BF8339;
+$mostarda-2: #8C5B1F;
+$red: #e34c4c;
+
+.bg-light{
+  color: $marrom-escuro;
+  background-color:$branco;
+  a{
+    color: $marrom-escuro;
+    background-color: transparent;
+  }
+}
+
+.bg-dark{
+  color: $branco;
+  background-color: $marrom-claro;
+  a{
+    color: $branco;
+    background-color: transparent;
+  }
+}

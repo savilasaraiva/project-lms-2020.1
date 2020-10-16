@@ -1,0 +1,43 @@
+.social-media{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  a{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.8px solid $branco;
+    margin: 0 10px;
+    padding: 0;
+    &:hover{
+      opacity: 0.8;
+    }
+    img{
+      margin: 0;    
+      padding: 0;
+      width: 18px;
+    }
+  }
+}
+
+.btn{
+  align-items: center;
+  line-height: 38px;
+  font-weight: 500;
+  font-size: 14px;  
+  background: transparent;
+  padding: 0px 30px;
+  margin: 0 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  border: $marrom-1 solid 2px;
+  transition: all 150ms linear 0s; 
+  &:hover{
+    opacity: 0.6;
+  }
+}

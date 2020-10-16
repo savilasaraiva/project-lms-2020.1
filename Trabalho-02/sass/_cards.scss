@@ -1,0 +1,140 @@
+.ctn {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.ctn.gallery{
+  align-items: stretch;
+}
+
+.card-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 240px;
+  min-width: 240px;
+  text-align: center;
+  margin: 20px 10px 20px 10px;
+  border-radius: 12px;
+  padding-bottom: 10px;
+}
+.card-gallery:hover{
+  -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+button.accordion {
+  -webkit-border-radius: 35;
+  -moz-border-radius: 35;
+  background-color: #ffffff00;
+  border-radius: 35px;
+  color: $mostarda-1;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid $mostarda-1 2px;
+  text-decoration: none;
+  cursor: pointer;
+}
+button.accordion:hover, button.active {
+  opacity: 0.7;
+  background: $mostarda-1;
+  text-decoration: none;
+  color: $branco;
+}
+div.accordion{
+  display: none;
+}
+.card-gallery img{
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+.img-over{
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 240px;
+  width: 240px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $branco;
+}
+.img-over:hover .overlay {
+  opacity: 1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.price {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  text-align: center;
+  margin: 15px;
+}
+.name{
+  text-align: center;
+  color: $red;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.card-gallery .descript{
+  margin: 2px 8px 2px 8px;
+  vertical-align: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+}
+.card-gallery button {
+  -webkit-border-radius: 35;
+  -moz-border-radius: 35;
+  background-color: #ffffff00;
+  border-radius: 35px;
+  color: $red;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid $red 2px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.card-gallery button:hover {
+  opacity: 0.7;
+  background: $red;
+  text-decoration: none;
+  color: white;
+}
+
+@-webkit-keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}

@@ -1,0 +1,51 @@
+.nav-buttons{
+  display: flex;
+  justify-content: flex-end;
+  #bag{
+    margin: 0 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 150ms linear 0s;
+    &:hover{
+      opacity: 0.6;
+    }
+    img{
+      width: 38px;
+    }
+  }
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.nav-social-media{
+  img{
+    width: 150px;
+  }
+  div{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin: 5px 20px;
+    a{
+      text-decoration: none;
+      margin: 0 20px 0 8px;
+    }
+  }
+}
+
+.nav-dev {
+  div{
+    margin: 5px 20px;
+  }
+}
