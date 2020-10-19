@@ -1,0 +1,16 @@
+/* Forms */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 100%;
+}
+.form{
+  margin: 20px;
+}

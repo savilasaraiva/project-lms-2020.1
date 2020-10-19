@@ -1,0 +1,94 @@
+.title {
+  background-color: transparent;
+  color: $branco;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  .title {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+
+    &:after {
+      content: "";
+      border: 0.35rem solid transparent;
+      border-top-color: rgba($red, 0.45);
+      margin-left: 0.25em;
+      transform: translateY(0.15em);
+    }
+  }
+
+  .menu {
+    position: absolute;
+    min-width: 15ch;
+    left: 50%;
+    top: calc(100% - 0.25rem);
+    transition: $transition;
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top center;
+    visibility: hidden;
+    opacity: 0.3;
+    padding: 0.5em 0;
+    background-color: $rose-1;
+    border-radius: 4px;
+    box-shadow: 0 0.15em 0.25em rgba(black, 0.25);
+    z-index: 1;
+
+    a {
+      color: $black;
+      display: block;
+      padding: 0.5em;
+      opacity: 0;
+      transition: $transition;
+
+      &:hover {
+        background-color: rgba($red, 0.15);
+        color: $branco;
+      }
+
+      &:focus {
+        outline: none;
+        background-color: rgba($red, 0.25);
+        color: $branco;
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    border: 0.5rem solid transparent;
+    border-bottom-color: $red;
+    position: absolute;
+    top: calc(100% - 1.25rem);
+    left: 50%;
+    transform: translateX(-50%);
+    transition: $transition;
+    opacity: 0;
+    will-change: opacity;
+  }
+
+  &:hover,
+  &:focus-within {
+    .title {
+      border-top-color: $red;
+    }
+
+    .menu {
+      opacity: 1;
+      transform: rotateX(0) translateX(-50%);
+      visibility: visible;
+
+      a {
+        opacity: 1;
+      }
+    }
+
+    &:after {
+      opacity: 1;
+    }
+  }
+}

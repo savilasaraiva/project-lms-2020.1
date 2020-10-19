@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopTupperware</title>
+  <link rel="shortcut icon" href="img/ET-01.png" type="image/x-icon">
+  <link rel="stylesheet" href="sass/global.css">
+</head>
+
+<body onload="disparaEventos()">
+  <header>
+    <div id="logo">
+      <img src="img/tupper-dulce.png" alt="Shop Tupperware">
+    </div>
+    <nav class="bg-dark">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a class="title" href="loja.html">Produtos</a>
+          <ul class="menu" id="sweets-dropdown">
+            <li><a href="loja.html#1">Armazenagem</a></li>
+            <li><a href="loja.html#2">Microondas</a></li>
+            <li><a href="loja.html#3">Portátil</a></li>
+            <li><a href="loja.html#4">Preparar</a></li>
+            <li><a href="loja.html#5">Servir</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Promoções</a></li>
+        <li><a href="#">Nossa História</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <div class="nav-buttons dropdown">
+        <a class="btn">
+          Login
+        </a>
+        <ul class="menu" id="sweets-dropdown">
+          <form id="form-login" class="form">
+            <h2>Login</h2>
+            Email: <input type="text" id="email" name="email" value="" placeholder="Ex: maria@email.com" /><br />
+            Senha: <input type="password" id="password" name="password" placeholder="**********" /><br />
+            <div class="group-btn">
+              <input class="btn blank" type="submit" value="Enviar"/>
+            </div>
+          </form>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1 class="title">Destaques da Semana</h1>
+      <div class="ctn gallery">
+        <div class="card-gallery">
+          <div class="img-over">
+            <img src="img/produtos/img-01.png" alt="Tupper Caixa Feijão">
+            <div class="overlay">
+              <p class="descript">
+                A porta bolo é composta por uma base, tampa e alça<br/>
+                Pertence a linha de armazenagem
+              </p>
+            </div>
+          </div>
+          <h4 class="name">Tupperware Big Cake Mint</h4>
+          <p class="price">R$ 166,90</p>
+          <button>Adicionar ao Pedido</button>
+        </div>
+        <div class="card-gallery">
+          <div class="img-over">
+            <img src="img/produtos/img-02.png" alt="Tupper Caixa Feijão">
+            <div class="overlay">
+              <p class="descript">
+                Armazena 2Kg de feijão<br/>
+                Pertence a linha de armazenagem
+              </p>
+            </div>
+          </div>
+          <h4 class="name"> Tupperware Tupper Caixa Feijão PB</h4>
+          <p class="price">R$ 73,90</p>
+          <button>Adicionar ao Pedido</button>
+        </div>
+        <div class="card-gallery">
+          <div class="img-over">
+            <img src="img/produtos/img-03.png" alt="Torticado">
+            <div class="overlay">
+              <p class="descript">
+                Armazena 1,6kg de Tapioca, possui tampa rosa e base branca<br/>
+                Pertence a linha de armazenagem
+              </p>
+            </div>
+          </div>
+          <h4 class="name">Tupper Caixa Tapioca Bistrô</h4>
+          <p class="price">R$ 63,90</p>
+          <button>Adicionar ao Pedido</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark">
+    <div class="info nav-dev">
+      <div>Copyright © 2020</div>
+      <div>All Rights Reserved</div>
+      <div>Feito com ❤ por Sávila Saraiva</div>
+    </div>
+    <div class="info nav-social-media">
+      <div><b>entre linhas</b> - Saiô Farias</div>
+      <div>
+        <a href="">handmadeatelier17@gmail.com</a>
+      </div>
+      <div class="social-media">
+        <a href="#">
+          <img src="img/facebook-icon.png" alt="facebook">
+        </a>
+        <a href="#">
+          <img src="img/twiter-icon.png" alt="twiter">
+        </a>
+        <a href="#">
+          <img src="img/pinterest-icon.png" alt="pinterest">
+        </a>
+        <a href="#">
+          <img src="img/instagram-icon.png" alt="instagram">
+        </a>       
+      </div>  
+    </div>
+  </footer>
+  <script src="js/global.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+$branco: #FFFFFF;
+$branco-2:  #e3d6ceff;
+$bege: #F2E0D5;
+$marrom-2: #D96D55;
+$red: #e34c4c;
+
+$black: #2A363B;
+
+$rose-1: #F67280;
+$red-dark: #C06C84;
+$orange: #F8B195;
+$yellow: #FECEAB;
+$white: #FFF;
+
+.bg-light{
+  color: $black;
+  background-color:$branco;
+  a{
+    color: $black;
+    background-color: transparent;
+  }
+  .btn{
+    border: black solid 2px;
+  }
+}
+
+.bg-dark{
+  color: $branco;
+  background-color: $black;
+  a{
+    color: $branco;
+    background-color: transparent;
+  }
+  .btn{
+    border: white solid 2px;
+  }
+}
